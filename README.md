@@ -40,7 +40,7 @@ clickcart/
 ## ✍️ Author
 Aditi Karfa
 1st Year B.Tech | Electronics and Computer Science
-Aspiring Web Developer | HTML • CSS • JS
+Aspiring Web Developer | HTML • CSS • JavaScript
 
 ---
 
