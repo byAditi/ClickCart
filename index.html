@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ClickCart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>ClickCart 🛒</h1>
+      <p class="tagline">Shop in a Click.</p>
+    </div>
+    <button id="theme-toggle">Toggle Theme</button>
+  </header>
+
+  <main>
+    <br>
+    <h2 class="product-heading">🛍️ Products For You</h2>
+    <section class="container">
+      <div class="product">
+        <img src="https://www.zeodra.com/cdn/shop/products/Royal-Blue.jpg?v=1587288398" alt="T-Shirt">
+        <h3>T-Shirt</h3>
+        <p>Price: $80</p>
+        <button onclick="addToCart('T-Shirt', 80)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://s.alicdn.com/@sc04/kf/Hfa40288df9de4b8487312a4ce7617cdaE.jpg" alt="Trousers">
+        <h3>Trousers</h3>
+        <p>Price: $90</p>
+        <button onclick="addToCart('Trousers', 90)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://hips.hearstapps.com/hmg-prod/images/run-nike-shoes-66db0a2eabc2f.jpg?crop=0.573xw:0.858xh;0.180xw,0&resize=640:*" alt="Shoes">
+        <h3>Running Shoes</h3>
+        <p>Price: $50</p>
+        <button onclick="addToCart('Running Shoes', 50)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://www.boat-lifestyle.com/cdn/shop/files/Artboard_1_2519fa28-1e18-46a1-b8af-5701d49789bb.png?v=1728873547" alt="Headphones">
+        <h3>Wireless Headphones</h3>
+        <p>Price: $70</p>
+        <button onclick="addToCart('Wireless Headphones', 70)">Add to Cart</button>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="product">
+        <img src="https://m.media-amazon.com/images/I/61ZjlBOp+rL.jpg" alt="Watch">
+        <h3>Smart Watch</h3>
+        <p>Price: $100</p>
+        <button onclick="addToCart('Smart Watch', 100)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://sunski.com/cdn/shop/files/sunski_polarized_sunglasses_baia_24_1400x1100.jpg?v=1748987571" alt="Sunglasses">
+        <h3>Sunglasses</h3>
+        <p>Price: $60</p>
+        <button onclick="addToCart('Sunglasses', 60)">Add to Cart</button>
+      </div>
+
+      <div class="product">
+        <img src="https://icon.in/cdn/shop/files/1_8cc399f2-f971-4660-bb24-5f7ab691c87e.jpg?v=1735287049" alt="Backpack">
+        <h3>Backpack</h3>
+        <p>Price: $40</p>
+        <button onclick="addToCart('Backpack', 40)">Add to Cart</button>
+      </div>
+    </section>
+
+    <section class="cart">
+      <h2>🛒 Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p class="total">Total: $<span id="total">0</span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 ClickCart. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
