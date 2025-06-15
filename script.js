@@ -10,6 +10,7 @@ function addToCart(productName, price) {
   const removeBtn = document.createElement("button");
   removeBtn.textContent = "Remove";
   removeBtn.className = "remove-btn";
+
   removeBtn.onclick = function () {
     cartItems.removeChild(item);
     total -= price;
@@ -28,8 +29,13 @@ function updateTotal() {
   document.getElementById("total").textContent = total;
 }
 
+// Theme Toggle
 const toggleBtn = document.getElementById("theme-toggle");
+
+// Set initial icon based on current theme
 toggleBtn.textContent = document.body.classList.contains("dark") ? "🌞" : "🌙";
+
+// Add click event to toggle theme
 toggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("dark");
   toggleBtn.textContent = document.body.classList.contains("dark") ? "🌞" : "🌙";
