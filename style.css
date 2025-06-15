@@ -6,6 +6,35 @@
   --button-hover: #ae08a3;
 }
 
+/* === Landing Page Styles === */
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.logo-wrapper {
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.logo {
+  width: 30vw; /* 30% of the viewport width */
+}
+
+/* Optional animation effect */
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 body.dark {
   --bg-color: #1e1e1e;
   --text-color: #f5f5f5;
@@ -21,6 +50,18 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   transition: 0.3s;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-gif {
+  width: 60px;
+  height: auto;
+  border-radius: 10px; /* Optional: smooth corners */
 }
 
 header {
