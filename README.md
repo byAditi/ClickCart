@@ -31,6 +31,8 @@ https://byaditi.github.io/ClickCart
 ## 📁 Folder Structure
 clickcart/
 ├── index.html
+├── home.html
+├── logo.gif
 ├── style.css
 ├── script.js
 └── README.md
